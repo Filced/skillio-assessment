@@ -87,7 +87,7 @@ def db_delete_flight(id):
     result = {"success": "deleted flight id: %s " % id}
     return json.dumps(result)
 
-
+# This is for testing git commits :-)
 
 if __name__ == '__main__':
 
