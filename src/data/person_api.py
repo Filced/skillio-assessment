@@ -19,7 +19,7 @@ def get_person_by_id(id):
     try:
         return db_get_person_by_id(id)
     except:
-        return {"error": "no person with id %s" % id}
+        return {"error": "no person with id %s" % id} 
 
 @app.route("/person", methods=['POST'])
 def create_person():

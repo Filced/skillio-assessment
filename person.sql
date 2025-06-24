@@ -1,4 +1,5 @@
-create table person (
+
+create table person if not exist(
     id serial primary key,
     name varchar(100),
     age int,

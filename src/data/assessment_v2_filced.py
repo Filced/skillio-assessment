@@ -47,7 +47,8 @@ def db_add_row(fligh_number, departure_time, arrival_time, departure_airport, de
         cursor.close()
         return json.dumps(result)
 
-
+def hello(name: str):
+    return f'Hello {name}, this is a test :-)'
 
 # order by departure time
 def order_by_departure():
@@ -95,4 +96,6 @@ if __name__ == '__main__':
     #db_add_row('AJ2475', '2025-08-10 12:00:00', '2025-08-10 13:00:00', 'Oslo Airport', 'Arlanda Airport')
     #db_add_row('VD0847', '2025-04-28 09:15:00', '2025-04-29 11:45:00', 'Heathrow Airport', 'Auckland Airport')
     #db_add_row('YT7842', '2025-11-14 11:30:00', '2025-11-14 13:00:00', 'Roma Airport', 'Wien Airport')
-    db_delete_flight(8)
+    #db_delete_flight(8)
+    
+    hello('Filip')
